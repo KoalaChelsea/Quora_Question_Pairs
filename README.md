@@ -40,7 +40,7 @@ Comparing different similarity calculations with embedding methods to improve th
 ### Motivation of Project
 Text Similarity plays a significant role in both text-related research and real-world applications. Measuring the similarity between terms, sentences, paragraphs, and documents has become a powerful tool to conduct future machine learning research. In addition, websites like Quora which is highly sensitive to the textual data, using NLP methods to identify the duplicated information would improve the user experience and “fold” the memory storage for the company. 		
 		
-## Relevant background research
+## Relevant Background Research
 ___What prior work does your proposal rely upon or sets the context for your question?___
 #### Similarity methods with supervised learning:
 To calculate the similarity of pairs, there are useful many measurement functions such as Cosine Distance, Euclidean Distance, Manhattan Distance, Jaccard Distance, Minkowski Distance, etc. In previous studies, they used supervised training combined with similarity methods to help sentence embeddings learn the meaning of a sentence more directly. For example, Smooth Inverse Frequency + Cosine Similarity.
