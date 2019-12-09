@@ -101,7 +101,7 @@ In terms of log loss, the ranking of the performance of the models are (from bes
 - Bag-of-Words + Cosine, Manhattan, Eucledian, Jaccard, Minkowst + SVR (0.7712)
 - TF-IDF + Cosine + Random Forest (0.8032)
 
-![picture alt](http://via.placeholder.com/200x150 "Performance Comparison")
+![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/Comparison.PNG "Performance Comparison")
 
 The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
 
