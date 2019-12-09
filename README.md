@@ -17,14 +17,12 @@ ___Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye___
 ## Roles and Responsibilities
 ___Student group members and which student is responsible for what parts?___
 
-Xinyi Ye:
-- Conducted EDA and created histograms, word cloud etc.
-- Processed data (tokenization, stemming) and performed Bag-of-Words transformation.
-- Defined similarity calculation functions for 5 distances, which are Cosine, Manhattan, Eucledian, Jaccard and Minkowst.
-- Conducted baseline assessments with these 5 similarity functions and calculated log loss of each. 
-- Performed SVR, Random Forest Regressor and Decision Tree Regressor with the similarity matrix and output log loss for further comparison.
-
 Jiaqi Tang:
+- Brought up project idea and data and helped figure out the general process of methods. 
+- Performed two-component LSA after TF-IDF for feature engineering.
+- Conducted similarity matrix which including cosine distance Manhattan distance and Euclidean distance for LSA components of quora question pairs.
+- Calculated the log loss after applying similarity matrix.
+- Used machine learning methods: Random forest and SVR for reducing the log loss from the similarity matrix for optimization.
 
 Jingjing Lin: 
 - Performed the TF-IDF transformation from a provided matrix of counts and measured cosine similarity between quora question pairs. 
@@ -36,6 +34,12 @@ Yingjie(Chelsea) Wang:
 - Visualized the evaluation results and make comparison on log loss. 
 - Helped organize and write the README.   
 
+Xinyi Ye:
+- Conducted EDA and created histograms, word cloud etc.
+- Processed data (tokenization, stemming) and performed Bag-of-Words transformation.
+- Defined similarity calculation functions for 5 distances, which are Cosine, Manhattan, Eucledian, Jaccard and Minkowst.
+- Conducted baseline assessments with these 5 similarity functions and calculated log loss of each. 
+- Performed SVR, Random Forest Regressor and Decision Tree Regressor with the similarity matrix and output log loss for further comparison.
 
 ## Motivation
 ___What is the research question and why is it worth asking?___
@@ -52,7 +56,6 @@ ___What prior work does your proposal rely upon or sets the context for your que
 To calculate the similarity of pairs, there are useful many measurement functions such as Cosine Distance, Euclidean Distance, Manhattan Distance, Jaccard Distance, Minkowski Distance, etc. In previous studies, they used supervised training combined with similarity methods to help sentence embeddings learn the meaning of a sentence more directly. For example, Smooth Inverse Frequency + Cosine Similarity.
 #### Word Embedding methods
 Word embeddings tend to popular in Natural Language Processing, especially for measuring the similarity of the semantic meaning of words[Adrien Sieg,2018].In previous studies, to measure the semantics of words and short sentences. The three known methods are LSA, Word2Vec and GloVe have been utilized. 
-
 #### Quora Question Pairs Identification
 There are various methods and techniques have been used for identifying quora question Paris from Kaggle competition held by Quora. In this case, from this competition, most of the teams used high-level Machine learning and even deep learning methods to predict and identify quora question pairs. 
 However, there are few works from Kaggle to build the methods to explain how to improve the accuracy based on NLP techniques, for example, Word embedding methods. 
@@ -67,7 +70,7 @@ Similar to the other Natural Language Process, there are also few steps to condu
 
 - Exploratory Data Analysis (EDA)
 - Preprocess data
-- Feature Engineering (using different word embedding methods and “distance” measurement)
+- Feature Engineering (using different word embedding methods and "distance" measurement)
 - Model selection and building
 - Model comparison by Log Loss and Accuracy
 
@@ -77,14 +80,14 @@ Before conducting any data mining procedures, we performed EDA to get a whole pi
 #### Embeddings:
 In this project, three embeddings methods tend to be used to represent the word vectors: TD-IDF, TD-IDF+ISA, a bag of words.
 
-#### Similarity and supervised learning methods:
+#### Similarity and Supervised Learning Methods:
 With word embeddings processing, we used distance matrix as the method for identifying the Paris of quora question (if these two questions are the same questions or not), and machine learning methods are conducted for reducing the log loss from distance matrix in order to perform optimization.
 
-We used Cosine Distance, Manhattan distance, Jaccard Distance, and euclidean distance individually and compare with supervised learning methods with similarity measure methods: SVM/Logistic Regression/ + Cosine Similarity, similarity matrix + Radom Forest/support vector regression/Decision Tree Regressor, LSA + similarity matrix+Random Forest/Support vector regression.
+We used Cosine Distance, Manhattan distance, Jaccard Distance, and euclidean distance individually and compared with supervised learning methods with similarity measure methods: SVM/Logistic Regression/ + Cosine Similarity, Similarity Matrix + Random Forest/Support Vector Regression/Decision Tree Regressor, LSA + Similarity Matrix + Random Forest/Support Vector Regression.
 
-In this case, there are seven models after combining different word embedding methods, distance matrix with different machine learning modelings.
+Overall, there are seven models after combining different word embedding methods, distance matrix with different machine learning modelings.
 
-#### Evaluation of the performance:
+#### Performance Evaluation:
 Log loss was implemented to evaluate the performance of our results from these seven models.
 
 ## Results 
@@ -97,6 +100,9 @@ In terms of log loss, the ranking of the performance of the models are (from bes
 - TF-IDF + Cosine, Manhattan, Eucledian + MultinomialNB + LSA + Random Forest Regressor(0.7656)
 - Bag-of-Words + Cosine, Manhattan, Eucledian, Jaccard, Minkowst + SVR (0.7712)
 - TF-IDF + Cosine + Random Forest (0.8032)
+
+----
+Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
 
