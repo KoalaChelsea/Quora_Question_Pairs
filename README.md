@@ -1,5 +1,16 @@
 # Identify Quora Question Pairs With The Same Intents 
-## Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye
+* Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye *
+
+Quick menu
+* [Roles and Responsibilities](#Roles and Responsibilities)
+* [Motivation](#Motivation)
+* [Relevant Background Research](#Relevant Background Research.)
+* [Data Collection](#Data Collection)
+* [Methods](#Methods)
+* [Procedure](#Procedure)
+* [Results](#Results)
+* [Analysis](#Analysis)
+* [References](#References)
 
 
 ### Student group members and which student is responsible for what parts?
