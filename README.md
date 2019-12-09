@@ -3,10 +3,10 @@ ___Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye___
 
 ### Quick menu
 
-* [Roles and Responsibilities](#Roles_and_Responsibilities)
+* [Roles and Responsibilities](#Roles-and-Responsibilities)
 * [Motivation](#Motivation)
-* [Relevant Background Research](#Relevant_Background_Research)
-* [Data Collection](#Data_Collection)
+* [Relevant Background Research](#Relevant-Background-Research)
+* [Data Collection](#Data-Collection)
 * [Methods](#Methods)
 * [Procedure](#Procedure)
 * [Results](#Results)
