@@ -83,7 +83,7 @@ In this project, three embeddings methods tend to be used to represent the word 
 #### Similarity and Supervised Learning Methods:
 With word embeddings processing, we used distance matrix as the method for identifying the Paris of quora question (if these two questions are the same questions or not), and machine learning methods are conducted for reducing the log loss from distance matrix in order to perform optimization.
 
-We used Cosine Distance, Manhattan distance, Jaccard Distance, and euclidean distance individually and compared with supervised learning methods with similarity measure methods: SVM/Logistic Regression/ + Cosine Similarity, Similarity Matrix + Random Forest/Support Vector Regression/Decision Tree Regressor, LSA + Similarity Matrix + Random Forest/Support Vector Regression.
+We used Cosine Distance, Manhattan distance, Jaccard Distance, and euclidean distance individually and compared with supervised learning methods with similarity measure methods: SVM/Logistic Regression + Cosine Similarity, Similarity Matrix + Random Forest/Support Vector Regression/Decision Tree Regressor, LSA + Similarity Matrix + Random Forest/Support Vector Regression.
 
 Overall, there are seven models after combining different word embedding methods, distance matrix with different machine learning modelings.
 
@@ -92,6 +92,8 @@ Log loss was implemented to evaluate the performance of our results from these s
 
 ## Results 
 ___How you are measuring performance?___
+
+
 In terms of log loss, the ranking of the performance of the models are (from best to worst):
 - Bag-of-Words + Cosine, Manhattan, Eucledian, Jaccard, Minkowst + Random Forest Regressor (0.5934)
 - TF-IDF + Cosine + Logistic Regression (0.6024)
@@ -107,6 +109,8 @@ The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest
 
 ## Analysis
 ![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/poster.jpg "Poster")
+
+The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
 
 ## References
 [1] Similarity Techniques + NLP: https://www.kaggle.com/tj2552/similarity-techniques-nlp
