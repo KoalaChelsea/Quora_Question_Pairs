@@ -127,6 +127,8 @@ From the baseline analysis, cosine is the best similarity method for identifying
 
 Also, from the plot above, we learn that using a similarity matrix containing different distance methods will obtain better performance, compared to the models that utilized only cosine similarity. In terms of the three embedding methods, a bag of words provides the best solution with the lowest log loss, compared to TF-IDF and LSA.
 
+There might be more complex modeling blending that can improve the performance further. BoW and TF-IDF are two of the most common methods people use in information retrieval. Generally speaking, SVMs and Naive Bayes are more common for the classification problem; however, because their accuracy is dependent on the training data, Xgboost provided the best accuracy in this particular data set. I will suggest Xgboost as a possible further approach to improve performance.
+
 
 ![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/poster.jpg "Poster")
 
