@@ -118,8 +118,9 @@ After applying different machine learning methods, the ranking of the model perf
 
 ## Analysis
 
-
-The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
+From the baseline analysis, cosine is the best similarity method for identifying Quora Paris with the lowest log loss among the five distances. However, we believe the log loss can be reduced by model blending. 
+ 
+After combining different word embedding methods, distance matrix with different machine learning modelings, the best performance comes from Bag-of-Words + Similarity Matrix + Random Forest Regressor. And the similarity matrix includes Cosine, Manhattan, Euclidean, Jaccard, and Minkowski.
 
 ![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/poster.jpg "Poster")
 
