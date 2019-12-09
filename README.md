@@ -1,5 +1,5 @@
 # Identify Quora Question Pairs With The Same Intents 
-* Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye *
+_Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye_
 
 Quick menu
 * [Roles and Responsibilities](#Roles and Responsibilities)
