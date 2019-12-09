@@ -1,5 +1,5 @@
 # Identify Quora Question Pairs With The Same Intents 
-__Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye__
+___Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye___
 
 ### Quick menu
 * [Roles and Responsibilities](#Roles and Responsibilities)
@@ -14,7 +14,7 @@ __Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye__
 
 
 ## Roles and Responsibilities
-__Student group members and which student is responsible for what parts?__
+___Student group members and which student is responsible for what parts?___
 
 Xinyi Ye:
 
@@ -31,17 +31,17 @@ Yingjie(Chelsea) Wang:
 - Helped organize and write the README.   
 
 
-## Motivation. 
-__What is the research question and why is it worth asking?__
+## Motivation
+___What is the research question and why is it worth asking?___
 
 ### Research Question
 Comparing different similarity calculations with embedding methods to improve the accuracy of identifying Quora question pairs.
 
-### Motivation 
+### Motivation of Project
 Text Similarity plays a significant role in both text-related research and real-world applications. Measuring the similarity between terms, sentences, paragraphs, and documents has become a powerful tool to conduct future machine learning research. In addition, websites like Quora which is highly sensitive to the textual data, using NLP methods to identify the duplicated information would improve the user experience and “fold” the memory storage for the company. 		
 		
 ## Relevant background research. 
-__What prior work does your proposal rely upon or sets the context for your question?__
+___What prior work does your proposal rely upon or sets the context for your question?___
 #### Similarity methods with supervised learning:
 To calculate the similarity of pairs, there are useful many measurement functions such as Cosine Distance, Euclidean Distance, Manhattan Distance, Jaccard Distance, Minkowski Distance, etc. In previous studies, they used supervised training combined with similarity methods to help sentence embeddings learn the meaning of a sentence more directly. For example, Smooth Inverse Frequency + Cosine Similarity.
 #### Word Embedding methods
@@ -52,7 +52,7 @@ There are various methods and techniques have been used for identifying quora qu
 However, there are few works from Kaggle to build the methods to explain how to improve the accuracy based on NLP techniques, for example, Word embedding methods. 
 Therefore, according to previous work of NLP techniques and this specific question that is quora question Paris identification. We intend to use different word embedding methods with pre-trained and to combine with similarity calculations in order to find an optimal way to measure the similarity of the semantic meaning of sentences.
 
-## Data Collection 
+## Data Collection
 We acquired the dataset (https://www.kaggle.com/c/quora-question-pairs/data) from one of the Kaggle’s NLP competitions. There are two datasets in this project, including the training data and testing data. There are 402900 question pairs of training data. 36.92% of them are duplicate pairs, and 111780 questions appeared multiple times.
 
 ## Methods
@@ -67,7 +67,10 @@ Similar to the other Natural Language Process, there are also few steps to condu
 
 Before conducting any data mining procedures, we performed EDA to get a whole picture of the dataset, including identifying the duplicate pairs, checking the number of characters and words of each question as well as using Wordcloud to visualize the most frequent words. After that, we preprocessed the dataset using the regular expression to clean, uniform all content. We split data into training and testing datasets by random. We built Bag-of-Words (BoW) and TFIDF with different distance measurements (Cosine, Manhattan, Euclidean, Jaccard and Minkowski) and tested the feature matrix in different models (Logistic regression, MultinomialNB, Random forest and SVR) by Log Loss and Accuracy.
 
-## Results (including how you are measuring performance)
+## Results 
+___How you are measuring performance?___
+
+
 ## Analysis
 
 ## References
