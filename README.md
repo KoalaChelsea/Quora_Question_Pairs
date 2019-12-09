@@ -69,10 +69,10 @@ We acquired the dataset (https://www.kaggle.com/c/quora-question-pairs/data) fro
 Similar to the other Natural Language Process, there are also few steps to conduct text-similarity comparison in this project.
 
 - Exploratory Data Analysis (EDA)
-- Preprocess data
+- Data Pre-processing
 - Feature Engineering (using different word embedding methods and "distance" measurement)
-- Model selection and building
-- Model comparison by Log Loss and Accuracy
+- Model Selection and Building
+- Model Comparison by Log Loss and Accuracy
 
 #### Pre-processing:
 Before conducting any data mining procedures, we performed EDA to get a whole picture of the dataset, including identifying the duplicate pairs, checking the number of characters and words of each question as well as using Wordcloud to visualize the most frequent words. After that, we preprocessed the dataset using the regular expression to clean, uniform all content. We split data into training and testing datasets by random. We built Bag-of-Words (BoW) and TFIDF with different distance measurements (Cosine, Manhattan, Euclidean, Jaccard and Minkowski) and tested the feature matrix in different models (Logistic regression, MultinomialNB, Random forest and SVR) by Log Loss and Accuracy.
@@ -101,8 +101,7 @@ In terms of log loss, the ranking of the performance of the models are (from bes
 - Bag-of-Words + Cosine, Manhattan, Eucledian, Jaccard, Minkowst + SVR (0.7712)
 - TF-IDF + Cosine + Random Forest (0.8032)
 
-----
-Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+![picture alt](http://via.placeholder.com/200x150 "Performance Comparison")
 
 The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
 
