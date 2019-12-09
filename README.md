@@ -93,8 +93,14 @@ Log loss was implemented to evaluate the performance of our results from these s
 ## Results 
 ___How you are measuring performance?___
 
+After data pre-processing, we used distance matrix as the baseline for identifying the Paris of quora question:
+- Cosine: 0.961
+- Manhattan: 2.208
+- Euclidean: 1.830
+- Jaccard: 2.821
+- Minkowski：1.830
 
-In terms of log loss, the ranking of the performance of the models are (from best to worst):
+After applying different machine learning methods, the ranking of the model performance in term of log loss from best to worst is:
 - Bag-of-Words + Cosine, Manhattan, Eucledian, Jaccard, Minkowst + Random Forest Regressor (0.5934)
 - TF-IDF + Cosine + Logistic Regression (0.6024)
 - TF-IDF + Cosine + MultinomialNB (0.6582)
@@ -105,12 +111,12 @@ In terms of log loss, the ranking of the performance of the models are (from bes
 
 ![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/Comparison.PNG "Performance Comparison")
 
-The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
-
 ## Analysis
-![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/poster.jpg "Poster")
+
 
 The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
+
+![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/poster.jpg "Poster")
 
 ## References
 [1] Similarity Techniques + NLP: https://www.kaggle.com/tj2552/similarity-techniques-nlp
