@@ -120,7 +120,10 @@ After applying different machine learning methods, the ranking of the model perf
 
 From the baseline analysis, cosine is the best similarity method for identifying Quora Paris with the lowest log loss among the five distances. However, we believe the log loss can be reduced by model blending. 
  
-After combining different word embedding methods, distance matrix with different machine learning modelings, the best performance comes from Bag-of-Words + Similarity Matrix + Random Forest Regressor. And the similarity matrix includes Cosine, Manhattan, Euclidean, Jaccard, and Minkowski.
+After combining different word embedding methods, distance matrix with various machine learning modelings, the best performance comes from Bag-of-Words + Similarity Matrix + Random Forest Regressor, which has a log loss of 0.5934. Therefore, using machine learning algorithms tend to reduce log loss significantly. 
+
+Also, from the plot above, we learn that using a similarity matrix containing different distance methods will obtain better performance, compared to the models that utilized only cosine similarity. In terms of the three embedding methods, a bag of words provides the best solution with the lowest log loss, compared to TF-IDF and LSA.
+
 
 ![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/poster.jpg "Poster")
 
