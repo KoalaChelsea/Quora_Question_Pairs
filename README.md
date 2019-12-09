@@ -76,9 +76,13 @@ ___How you are measuring performance?___
 
 ## References
 [1] Similarity Techniques + NLP: https://www.kaggle.com/tj2552/similarity-techniques-nlp
+
 [2] Shashi Shankar, Aniket Shenoy(2018): Identifying Quora question pairs having the same intent
+
 [3] Wael H. Gomaa(2013): A Survey of Text Similarity Approaches
+
 [4] Text Similarities: Estimate the degree of similarity between two texts: https://medium.com/@adriensieg/text-similarities-da019229c894
+
 [5] Pre-trained Word Embeddings or Embedding Layer? — A Dilemma: 
 https://towardsdatascience.com/pre-trained-word-embeddings-or-embedding-layer-a-dilemma-8406959fd76c		
 
