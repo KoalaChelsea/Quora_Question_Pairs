@@ -78,8 +78,11 @@ Similar to the other Natural Language Process, there are also few steps to condu
 - Model Selection and Building
 - Model Comparison by Log Loss and Accuracy
 
+#### Exploratory Data Analysis:
+Before conducting any data mining procedures, we performed EDA to get a whole picture of the dataset, including identifying the duplicate pairs, checking the number of characters and words of each question as well as using WordCloud to visualize the most frequent words.
+
 #### Pre-processing:
-Before conducting any data mining procedures, we performed EDA to get a whole picture of the dataset, including identifying the duplicate pairs, checking the number of characters and words of each question as well as using WordCloud to visualize the most frequent words. After that, we preprocessed the dataset using the regular expression to clean, uniform all content. We split data into training and testing datasets by random. We built Bag-of-Words (BoW) and TFIDF with different distance measurements (Cosine, Manhattan, Euclidean, Jaccard, and Minkowski) and tested the feature matrix in different models (Logistic regression, MultinomialNB, Random forest, and SVR) by Log Loss and Accuracy.
+After that, we preprocessed the dataset using the regular expression to clean, uniform all content. We split data into training and testing datasets by random.
 
 #### Embeddings:
 In this project, three embeddings methods tend to be used to represent the word vectors: TD-IDF, TD-IDF+ISA, a bag of words.
@@ -120,7 +123,7 @@ After applying different machine learning methods, the ranking of the model perf
 
 From the baseline analysis, cosine is the best similarity method for identifying Quora Paris with the lowest log loss among the five distances. However, we believe the log loss can be reduced by model blending. 
  
-After combining different word embedding methods, distance matrix with various machine learning modelings, the best performance comes from Bag-of-Words + Similarity Matrix + Random Forest Regressor, which has a log loss of 0.5934. Therefore, using machine learning algorithms tend to reduce log loss significantly. 
+ We built Bag-of-Words (BoW) and TFIDF with different distance measurements (Cosine, Manhattan, Euclidean, Jaccard, and Minkowski) and tested the feature matrix in different models (Logistic regression, MultinomialNB, Random forest, and SVR) by Log Loss and Accuracy. After combining different word embedding methods, distance matrix with various machine learning modelings, the best performance comes from Bag-of-Words + Similarity Matrix + Random Forest Regressor, which has a log loss of 0.5934. Therefore, using machine learning algorithms tend to reduce log loss significantly. 
 
 Also, from the plot above, we learn that using a similarity matrix containing different distance methods will obtain better performance, compared to the models that utilized only cosine similarity. In terms of the three embedding methods, a bag of words provides the best solution with the lowest log loss, compared to TF-IDF and LSA.
 
