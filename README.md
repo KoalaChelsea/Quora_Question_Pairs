@@ -18,6 +18,11 @@ ___Dance Squad: Jingjing Lin, Jiaqi Tang, Yingjie(Chelsea) Wang, Xinyi Ye___
 ___Student group members and which student is responsible for what parts?___
 
 Xinyi Ye:
+- Conducted EDA and created histograms, word cloud etc.
+- Processed data (tokenization, stemming) and performed Bag-of-Words transformation.
+- Defined similarity calculation functions for 5 distances, which are Cosine, Manhattan, Eucledian, Jaccard and Minkowst.
+- Conducted baseline assessments with these 5 similarity functions and calculated log loss of each. 
+- Performed SVR, Random Forest Regressor and Decision Tree Regressor with the similarity matrix and output log loss for further comparison.
 
 Jiaqi Tang:
 
@@ -66,11 +71,34 @@ Similar to the other Natural Language Process, there are also few steps to condu
 - Model selection and building
 - Model comparison by Log Loss and Accuracy
 
+#### Pre-processing:
 Before conducting any data mining procedures, we performed EDA to get a whole picture of the dataset, including identifying the duplicate pairs, checking the number of characters and words of each question as well as using Wordcloud to visualize the most frequent words. After that, we preprocessed the dataset using the regular expression to clean, uniform all content. We split data into training and testing datasets by random. We built Bag-of-Words (BoW) and TFIDF with different distance measurements (Cosine, Manhattan, Euclidean, Jaccard and Minkowski) and tested the feature matrix in different models (Logistic regression, MultinomialNB, Random forest and SVR) by Log Loss and Accuracy.
+
+#### Embeddings:
+In this project, three embeddings methods tend to be used to represent the word vectors: TD-IDF, TD-IDF+ISA, a bag of words.
+
+#### Similarity and supervised learning methods:
+With word embeddings processing, we used distance matrix as the method for identifying the Paris of quora question (if these two questions are the same questions or not), and machine learning methods are conducted for reducing the log loss from distance matrix in order to perform optimization.
+
+We used Cosine Distance, Manhattan distance, Jaccard Distance, and euclidean distance individually and compare with supervised learning methods with similarity measure methods: SVM/Logistic Regression/ + Cosine Similarity, similarity matrix + Radom Forest/support vector regression/Decision Tree Regressor, LSA + similarity matrix+Random Forest/Support vector regression.
+
+In this case, there are seven models after combining different word embedding methods, distance matrix with different machine learning modelings.
+
+#### Evaluation of the performance:
+Log loss was implemented to evaluate the performance of our results from these seven models.
 
 ## Results 
 ___How you are measuring performance?___
+In terms of log loss, the ranking of the performance of the models are (from best to worst):
+- Bag-of-Words + Cosine, Manhattan, Eucledian, Jaccard, Minkowst + Random Forest Regressor (0.5934)
+- TF-IDF + Cosine + Logistic Regression (0.6024)
+- TF-IDF + Cosine + MultinomialNB (0.6582)
+- Bag-of-Words + Cosine, Manhattan, Eucledian, Jaccard, Minkowst + Regression Tree (0.7052)
+- TF-IDF + Cosine, Manhattan, Eucledian + MultinomialNB + LSA + Random Forest Regressor(0.7656)
+- Bag-of-Words + Cosine, Manhattan, Eucledian, Jaccard, Minkowst + SVR (0.7712)
+- TF-IDF + Cosine + Random Forest (0.8032)
 
+The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
 
 ## Analysis
 
