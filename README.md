@@ -106,6 +106,7 @@ In terms of log loss, the ranking of the performance of the models are (from bes
 The best performance comes from Bag-of-Words + Similarity Natrix + Random Forest Regressor.
 
 ## Analysis
+![picture alt](https://github.com/KoalaChelsea/Quora_Question_Pairs/blob/master/poster.jpg "Poster")
 
 ## References
 [1] Similarity Techniques + NLP: https://www.kaggle.com/tj2552/similarity-techniques-nlp
